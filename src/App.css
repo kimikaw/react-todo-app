@@ -1,23 +1,21 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background: rgba(0, 102, 255, 0.38);
   font-family: "Open Sans", sans-serif;
+  background: rgba(0, 102, 255, 0.38);
   padding: 50px;
 }
 
 .todo-list {
   background-color: white;
   margin: auto;
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid #efefef;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
     0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee,
     0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
   padding: 30px;
 }

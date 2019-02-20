@@ -29,6 +29,3 @@ class App extends Component {
 }
 
 export default App;
-// add 3(amount of todo) items left
-//edit
-//delete

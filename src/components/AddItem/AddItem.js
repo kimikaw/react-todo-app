@@ -18,13 +18,14 @@ class AddItem extends Component {
       text,
       completed: false
     });
+    this.setState({ text: "" });
   };
 
   render() {
     const { text } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <input
           type="text"
           value={text}
