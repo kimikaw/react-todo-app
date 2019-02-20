@@ -14,9 +14,19 @@ class App extends Component {
     this.setState({ todos: nextTodo });
   };
 
+  handleDeleteItem = id => {
+    this.setState({
+      todos: this.state.todos.filter(todo => todo.id !== id)
+    });
+  };
+
   render() {
     const todoItems = this.state.todos.map(todoItem => (
-      <TodoItem key={todoItem.id} item={todoItem} />
+      <TodoItem
+        key={todoItem.id}
+        item={todoItem}
+        onDeleteItem={this.handleDeleteItem}
+      />
     ));
 
     return (
